@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipBoard", "ClipBoard\ClipBoard.csproj", "{4AA3E3C4-3AD4-4CEF-9023-91A39D7998BB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ED06A917-90B1-49D3-8C18-D4A9CB7E0BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{6B3A7110-9645-4278-9852-6A20058EEEBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.8", "4.8", "{C5E0BD56-0AB8-434A-A9CC-6E7BCB781C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clipboard", "4.8\Clipboard\Clipboard\Clipboard.csproj", "{0A711BDE-FD69-4750-8E64-F59AD388FA11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardUtility", "4.8\Clipboard\Utilities\ClipboardUtility\ClipboardUtility.csproj", "{ECEE89DC-68CD-4067-8B0B-D058560572FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestClipboard", "4.8\Clipboard\UnitTestClipboard\UnitTestClipboard.csproj", "{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +21,29 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4AA3E3C4-3AD4-4CEF-9023-91A39D7998BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4AA3E3C4-3AD4-4CEF-9023-91A39D7998BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4AA3E3C4-3AD4-4CEF-9023-91A39D7998BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4AA3E3C4-3AD4-4CEF-9023-91A39D7998BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A711BDE-FD69-4750-8E64-F59AD388FA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A711BDE-FD69-4750-8E64-F59AD388FA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A711BDE-FD69-4750-8E64-F59AD388FA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A711BDE-FD69-4750-8E64-F59AD388FA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECEE89DC-68CD-4067-8B0B-D058560572FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECEE89DC-68CD-4067-8B0B-D058560572FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECEE89DC-68CD-4067-8B0B-D058560572FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECEE89DC-68CD-4067-8B0B-D058560572FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED06A917-90B1-49D3-8C18-D4A9CB7E0BCC} = {C5E0BD56-0AB8-434A-A9CC-6E7BCB781C05}
+		{6B3A7110-9645-4278-9852-6A20058EEEBE} = {C5E0BD56-0AB8-434A-A9CC-6E7BCB781C05}
+		{ECEE89DC-68CD-4067-8B0B-D058560572FF} = {6B3A7110-9645-4278-9852-6A20058EEEBE}
+		{E6B55E16-9E7A-46C8-89FE-1B3CBAF463EE} = {ED06A917-90B1-49D3-8C18-D4A9CB7E0BCC}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D29CB0F8-12BF-4953-A410-6CE9AAAA2FF6}
+		SolutionGuid = {BE9DD2E9-0A01-4B64-8A81-A941883FD970}
 	EndGlobalSection
 EndGlobal

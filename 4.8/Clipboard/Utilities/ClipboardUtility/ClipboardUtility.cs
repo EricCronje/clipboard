@@ -128,9 +128,9 @@ namespace ClipboardUtility
         private void SetOutputMessage(string invalidResponseMessage, bool isQuiet = false, bool isHelpOtpion = false, bool isVersionOption = false)
         {
             _outputSB.Clear();
-            if (!isHelpOtpion && !isQuiet && !isVersionOption && _outputSB != null){_outputSB.AppendLine(invalidResponseMessage);}
-            if (isHelpOtpion){_outputSB.AppendLine(cHelpMessage);}
-            if (isVersionOption) {_outputSB.AppendLine(cVersion);} //#3
+            if (!isHelpOtpion && !isQuiet && !isVersionOption && _outputSB != null){_outputSB.Append(invalidResponseMessage);}
+            if (isHelpOtpion){_outputSB.Append(cHelpMessage);}
+            if (isVersionOption) {_outputSB.Append(cVersion);} //#3
         }
         /// <summary>
         /// Clears the cLipboard and the internal return string 

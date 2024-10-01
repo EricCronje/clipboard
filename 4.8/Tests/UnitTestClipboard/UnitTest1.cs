@@ -28,7 +28,7 @@ namespace UnitTestClipboard
                 Assert.IsTrue(isSuccessfull);
                 Assert.AreEqual(Clipboard.GetText(), inputArray[0]);
                 Assert.IsTrue(!string.IsNullOrEmpty(inputArray[0]));
-                Assert.IsTrue(clipboard.Output == "Dream\r\n");
+                Assert.IsTrue(clipboard.Output == "Dream");
                 //clean
                 Clipboard.Clear();
             }
@@ -58,7 +58,7 @@ namespace UnitTestClipboard
                 Assert.IsTrue(result);
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
-                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage + "\r\n");
+                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage);
             }
 
             //tests
@@ -94,7 +94,7 @@ namespace UnitTestClipboard
                 string checkInput = Clipboard.GetText().ToString();
                 Assert.AreEqual(check, checkInput);
                 Assert.IsTrue(string.IsNullOrEmpty(inputArray[0]));
-                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage + "\r\n");
+                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage);
                 //clean
                 Clipboard.Clear();
             }
@@ -116,7 +116,7 @@ namespace UnitTestClipboard
                 string checkInput = inputArray[0];
                 Assert.AreEqual(" ", checkInput);
                 Assert.IsTrue(!string.IsNullOrEmpty(inputArray[0]));
-                Assert.IsTrue(clipboard.Output == "Nothing added to clipboard.\r\n");
+                Assert.IsTrue(clipboard.Output == "Nothing added to clipboard.");
                 //clean
                 Clipboard.Clear();
             }
@@ -138,7 +138,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 string checkInput = inputArray[0];
                 Assert.IsTrue(check == checkInput);
-                Assert.IsTrue(clipboard.Output == checkInput + "\r\n");
+                Assert.IsTrue(clipboard.Output == checkInput);
                 //clean
                 Clipboard.Clear();
             }
@@ -192,7 +192,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
                 Assert.IsTrue(clipboard.Output.Length > 0);
-                Assert.IsTrue(clipboard.Output == "cb: cb [-h] <string to copy to the clipboard>[-q] [-v]\r\n\tCopies the string send to the system clipboard.\r\n\tAvailable to CTRL + v or shift + Insert to paste the content.\r\n\t\r\n\tWithout arguments, 'cb' shows the help content.\r\n\t\r\n\tOtherwise, 'cb' will copy the passed string to the system clipboard and outputs the string passed in the first argument.\r\n\t\r\n\tOptions:\r\n\t\t-q\t\t:\tWill not output the string passed.\r\n\t\t-h\t\t:\tWill bring up this help content. (Also with no arguments.)\r\n\r\n\tExit Status:\r\n\t'cb' returns true.\r\n\t\r\n\tExamples:\r\n\t\r\n\tUsed in windows bash.\r\n\tcb \"$(ls)\"\r\n\t\r\n\tResult:\r\n\tList the directory content with \\r\\n. Control line feed.\r\n\tThen CTRL+v or shift+insert to paste the content from the clipboard.\r\n");
+                Assert.IsTrue(clipboard.Output == "cb: cb [-h] <string to copy to the clipboard>[-q] [-v]\r\n\tCopies the string send to the system clipboard.\r\n\tAvailable to CTRL + v or shift + Insert to paste the content.\r\n\t\r\n\tWithout arguments, 'cb' shows the help content.\r\n\t\r\n\tOtherwise, 'cb' will copy the passed string to the system clipboard and outputs the string passed in the first argument.\r\n\t\r\n\tOptions:\r\n\t\t-q\t\t:\tWill not output the string passed.\r\n\t\t-h\t\t:\tWill bring up this help content. (Also with no arguments.)\r\n\r\n\tExit Status:\r\n\t'cb' returns true.\r\n\t\r\n\tExamples:\r\n\t\r\n\tUsed in windows bash.\r\n\tcb \"$(ls)\"\r\n\t\r\n\tResult:\r\n\tList the directory content with \\r\\n. Control line feed.\r\n\tThen CTRL+v or shift+insert to paste the content from the clipboard.");
                 //clean
                 Clipboard.Clear();
             }
@@ -213,7 +213,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
                 Assert.IsTrue(clipboard.Output.Length > 0);
-                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage + "\r\n");
+                Assert.IsTrue(clipboard.Output == clipboard.cHelpMessage);
                 //clean
                 Clipboard.Clear();
             }
@@ -234,7 +234,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
                 Assert.IsTrue(clipboard.Output.Length > 0);
-                Assert.IsTrue(clipboard.Output == "cb: cb [-h] <string to copy to the clipboard>[-q] [-v]\r\n\tCopies the string send to the system clipboard.\r\n\tAvailable to CTRL + v or shift + Insert to paste the content.\r\n\t\r\n\tWithout arguments, 'cb' shows the help content.\r\n\t\r\n\tOtherwise, 'cb' will copy the passed string to the system clipboard and outputs the string passed in the first argument.\r\n\t\r\n\tOptions:\r\n\t\t-q\t\t:\tWill not output the string passed.\r\n\t\t-h\t\t:\tWill bring up this help content. (Also with no arguments.)\r\n\r\n\tExit Status:\r\n\t'cb' returns true.\r\n\t\r\n\tExamples:\r\n\t\r\n\tUsed in windows bash.\r\n\tcb \"$(ls)\"\r\n\t\r\n\tResult:\r\n\tList the directory content with \\r\\n. Control line feed.\r\n\tThen CTRL+v or shift+insert to paste the content from the clipboard.\r\n");
+                Assert.IsTrue(clipboard.Output == "cb: cb [-h] <string to copy to the clipboard>[-q] [-v]\r\n\tCopies the string send to the system clipboard.\r\n\tAvailable to CTRL + v or shift + Insert to paste the content.\r\n\t\r\n\tWithout arguments, 'cb' shows the help content.\r\n\t\r\n\tOtherwise, 'cb' will copy the passed string to the system clipboard and outputs the string passed in the first argument.\r\n\t\r\n\tOptions:\r\n\t\t-q\t\t:\tWill not output the string passed.\r\n\t\t-h\t\t:\tWill bring up this help content. (Also with no arguments.)\r\n\r\n\tExit Status:\r\n\t'cb' returns true.\r\n\t\r\n\tExamples:\r\n\t\r\n\tUsed in windows bash.\r\n\tcb \"$(ls)\"\r\n\t\r\n\tResult:\r\n\tList the directory content with \\r\\n. Control line feed.\r\n\tThen CTRL+v or shift+insert to paste the content from the clipboard.");
                 //clean
                 Clipboard.Clear();
             }
@@ -255,7 +255,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
                 Assert.IsTrue(clipboard.Output.Length > 0);
-                Assert.IsTrue(clipboard.Output == $"Version 4.0.2\r\n");
+                Assert.IsTrue(clipboard.Output == $"Version 4.0.2");
                 //clean
                 Clipboard.Clear();
             }

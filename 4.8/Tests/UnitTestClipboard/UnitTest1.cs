@@ -255,7 +255,7 @@ namespace UnitTestClipboard
                 string check = Clipboard.GetText().ToString();
                 Assert.IsTrue(check == "");
                 Assert.IsTrue(clipboard.Output.Length > 0);
-                Assert.IsTrue(clipboard.Output == $"Version 4.0.2");
+                Assert.IsTrue(clipboard.Output == $"Version 5.1.2");
                 //clean
                 Clipboard.Clear();
             }
